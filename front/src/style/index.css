@@ -1,0 +1,22 @@
+.main-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-modal__inner {
+    width: 20%;
+    background-color: #fff;
+    min-height: 300px;
+}
+
+.form {
+    max-width: 200px;
+    padding: 20px;
+}
