@@ -75,6 +75,8 @@ export class TodoController extends BaseController {
   }
 
   private async toggleTodo(req: Request<any, any, { token: string, todoId: number, newDoneValue: boolean }>,res: Response){
+    console.log(123);
+    
     const resTodo =  await this.todoService.toggleTodo(req.body.token, req.body.todoId, req.body.newDoneValue)
     this.send("ok", res, { ok: true, message: "Запись измеена", resTodo});
   }
